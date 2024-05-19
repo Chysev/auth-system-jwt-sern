@@ -47,6 +47,10 @@ router.delete("/delete-account", isAuthenticated, apiController.DeleteAccount);
  * @param {string} newEmail.body.required - New email address
  * @returns {string} 400 - Missing required fields
  */
-router.put("/edit-account-email", isAuthenticated, apiController.DeleteAccount);
+router.put(
+  "/edit-account-email",
+  isAuthenticated,
+  apiController.EditAccountEmail
+);
 
 export default router;
